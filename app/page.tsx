@@ -146,11 +146,7 @@ export default function SpaceProfile() {
           <div className="relative inline-block mb-8">
             <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-primary to-purple-600 p-1 glow-effect">
               <div className="w-full h-full rounded-full bg-card flex items-center justify-center">
-                <img
-                  src="public/profile.jpeg"
-                  alt="Buyiswa Profile"
-                  className="w-44 h-44 rounded-full object-cover"
-                />
+                <img src="/profile.jpeg" alt="Buyiswa Profile" className="w-44 h-44 rounded-full object-cover" />
               </div>
             </div>
             {/* Orbiting Elements */}
