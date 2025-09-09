@@ -110,9 +110,7 @@ export default function SpaceProfile() {
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Rocket className="w-8 h-8 text-primary float-animation" />
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
-              Boitumelo
-            </span>
+            <span className="text-2xl font-bold text-white">Boitumelo</span>
           </div>
           <div className="flex gap-4">
             <Button variant="ghost" size="sm" className="glass-effect hover:glow-effect">
@@ -149,7 +147,7 @@ export default function SpaceProfile() {
             <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-primary to-purple-600 p-1 glow-effect">
               <div className="w-full h-full rounded-full bg-card flex items-center justify-center">
                 <img
-                  src="/professional-headshot-of-a-software-developer-in-s.jpg"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-09-09%20at%2011.41.25-91TiD8SWjdmxqV7tXyEmfFKa1xz4Zq.jpeg"
                   alt="Boitumelo Profile"
                   className="w-44 h-44 rounded-full object-cover"
                 />
@@ -161,9 +159,7 @@ export default function SpaceProfile() {
             </div>
           </div>
 
-          <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-white via-primary to-purple-400 bg-clip-text text-transparent">
-            Boitumelo Mokgatlhe
-          </h1>
+          <h1 className="text-5xl font-bold mb-4 text-white">Boitumelo Mokgatlhe</h1>
           <p className="text-xl text-muted-foreground mb-6">Full-Stack Developer & Space Enthusiast</p>
           <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
@@ -209,7 +205,11 @@ export default function SpaceProfile() {
               </div>
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill) => (
-                  <Badge key={skill} variant="secondary" className="bg-primary/20 text-primary border-primary/30">
+                  <Badge
+                    key={skill}
+                    variant="secondary"
+                    className="bg-primary/30 text-white border-primary/50 hover:bg-primary/40"
+                  >
                     {skill}
                   </Badge>
                 ))}
@@ -238,9 +238,11 @@ export default function SpaceProfile() {
             style={{ animationDelay: "2s" }}
           >
             <CardContent className="p-6">
-              <div className="flex items-center gap-2 mb-4">
-                <Mail className="w-6 h-6 text-primary" />
-                <h3 className="text-xl font-semibold">Contact</h3>
+              <div className="flex items-start justify-between mb-3">
+                <h3 className="text-lg font-semibold text-balance">Contact</h3>
+                <Badge variant="outline" className="text-xs">
+                  Get In Touch
+                </Badge>
               </div>
               <Button className="w-full bg-primary hover:bg-primary/80 glow-effect">
                 <Mail className="w-4 h-4 mr-2" />
@@ -252,9 +254,7 @@ export default function SpaceProfile() {
 
         {/* Projects Section */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-white to-primary bg-clip-text text-transparent">
-            Featured Projects
-          </h2>
+          <h2 className="text-3xl font-bold text-center mb-8 text-white">Featured Projects</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
               <Card
@@ -293,7 +293,7 @@ export default function SpaceProfile() {
 
         {/* Footer */}
         <footer className="text-center py-8">
-          <p className="text-muted-foreground">Built with ❤️ and lots of ☕ • Powered by Next.js & Tailwind CSS</p>
+          <p className="text-muted-foreground">Built with ❤️ and lots of ☕ • Powered by Code</p>
           <div className="flex justify-center gap-4 mt-4">
             <Button variant="ghost" size="sm" className="glass-effect hover:glow-effect">
               <Github className="w-4 h-4" />

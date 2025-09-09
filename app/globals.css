@@ -187,8 +187,16 @@
   animation: float 6s ease-in-out infinite;
 }
 
+.float-animation:hover {
+  animation-play-state: paused;
+}
+
 .twinkle-animation {
   animation: twinkle 2s ease-in-out infinite;
+}
+
+.twinkle-animation:hover {
+  animation-play-state: paused;
 }
 
 .shooting-star {
@@ -199,12 +207,28 @@
   animation: glow-pulse 2s ease-in-out infinite;
 }
 
+.glow-effect:hover {
+  animation-play-state: paused;
+}
+
 .orbit-animation {
   animation: orbit 20s linear infinite;
 }
 
+.orbit-animation:hover {
+  animation-play-state: paused;
+}
+
 .glass-effect {
   backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* Changed to dark background for better contrast with white text */
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Added better contrast styles for badges */
+.badge-primary {
+  background: rgba(217, 119, 6, 0.3);
+  color: oklch(0.98 0 0);
+  border: 1px solid rgba(217, 119, 6, 0.5);
 }
