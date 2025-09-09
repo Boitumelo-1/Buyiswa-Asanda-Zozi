@@ -147,7 +147,7 @@ export default function SpaceProfile() {
             <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-primary to-purple-600 p-1 glow-effect">
               <div className="w-full h-full rounded-full bg-card flex items-center justify-center">
                 <img
-                  src="public/WhatsApp Image 2025-09-09 at 08.23.43.jpeg"
+                  src="public/profile.jpeg"
                   alt="Buyiswa Profile"
                   className="w-44 h-44 rounded-full object-cover"
                 />
