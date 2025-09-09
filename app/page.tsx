@@ -159,8 +159,8 @@ export default function SpaceProfile() {
             </div>
           </div>
 
-          <h1 className="text-5xl font-bold mb-4 text-white">Boitumelo Mokgatlhe</h1>
-          <p className="text-xl text-muted-foreground mb-6">Full-Stack Developer & Space Enthusiast</p>
+          <h1 className="text-5xl font-bold mb-4 text-white">Buyiswa Asanda Zozi</h1>
+          <p className="text-xl text-muted-foreground mb-6">Software Developer</p>
           <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
