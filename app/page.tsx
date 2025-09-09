@@ -115,7 +115,7 @@ export default function SpaceProfile() {
           <div className="flex gap-4">
             <Button variant="ghost" size="sm" className="glass-effect hover:glow-effect">
               <a
-                href="https://linkedin.com/in/boitumelo"
+                href="https://www.linkedin.com/in/buyiswa-zozi-087980273/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -148,7 +148,7 @@ export default function SpaceProfile() {
               <div className="w-full h-full rounded-full bg-card flex items-center justify-center">
                 <img
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-09-09%20at%2011.41.25-91TiD8SWjdmxqV7tXyEmfFKa1xz4Zq.jpeg"
-                  alt="Boitumelo Profile"
+                  alt="Buyiswa Profile"
                   className="w-44 h-44 rounded-full object-cover"
                 />
               </div>
@@ -228,7 +228,7 @@ export default function SpaceProfile() {
               </div>
               <p className="text-muted-foreground text-balance">
                 Passionate developer who loves creating stellar user experiences. When I'm not coding, you'll find me
-                stargazing or reading about the latest in tech and space exploration.
+                stargazing or reading about the latest in tech exploration.
               </p>
             </CardContent>
           </Card>
