@@ -36,6 +36,21 @@ export default function SpaceProfile() {
     },
   ]
 
+
+  const experience = [
+    {
+      title: "Software Development Trainee - Java Program",
+      company: "Afrika Tikkun",
+      period: "May 2025 - Present",
+      description: [
+        "Gained hands-on experience in Java programming (OOP, data structures, algorithms, exception handling)",
+        "Developed and tested console and GUI-based applications using Java",
+        "Collaborated in team projects, using Git/GitHub for version control",
+        "Practiced debugging, testing, and documentation to ensure code quality",
+      ],
+    },
+  ]
+
   const projects = [
     {
       title: "Cosmic Task Manager",
@@ -254,6 +269,35 @@ export default function SpaceProfile() {
                   </div>
                   <p className="text-primary font-medium mb-2">{edu.institution}</p>
                   <p className="text-muted-foreground text-balance">{edu.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Experience Section */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-center mb-8 text-white">Experience</h2>
+          <div className="max-w-4xl mx-auto">
+            {experience.map((exp, index) => (
+              <Card
+                key={exp.title}
+                className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation"
+                style={{ animationDelay: `${index * 0.5}s` }}
+              >
+                <CardContent className="p-6">
+                  <div className="flex items-start justify-between mb-3">
+                    <h3 className="text-lg font-semibold text-balance">{exp.title}</h3>
+                    <Badge variant="outline" className="text-xs">
+                      {exp.period}
+                    </Badge>
+                  </div>
+                  <p className="text-primary font-medium mb-4">{exp.company}</p>
+                  <div className="space-y-2 text-muted-foreground">
+                    {exp.description.map((desc, descIndex) => (
+                      <p key={descIndex}>{desc}</p>
+                    ))}
+                  </div>
                 </CardContent>
               </Card>
             ))}
