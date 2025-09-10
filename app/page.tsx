@@ -36,7 +36,6 @@ export default function SpaceProfile() {
     },
   ]
 
-
   const experience = [
     {
       title: "Software Development Trainee - Java Program",
@@ -98,6 +97,105 @@ export default function SpaceProfile() {
     return () => clearInterval(interval)
   }, [funFacts.length])
 
+  const generateAndDownloadCV = () => {
+    // Dynamic import to avoid SSR issues
+    import("jspdf")
+      .then(({ default: jsPDF }) => {
+        const doc = new jsPDF()
+
+        // Header
+        doc.setFontSize(20)
+        doc.setFont(undefined, "bold")
+        doc.text("BUYISWA ASANDA ZOZI", 20, 20)
+
+        doc.setFontSize(12)
+        doc.setFont(undefined, "normal")
+        doc.text("Information Communication Technology - Application Development Graduate", 20, 30)
+        doc.text("+27 67 681 4892 | zozibuyiswa@gmail.com | Johannesburg, Gauteng", 20, 40)
+
+        // Profile Section
+        doc.setFontSize(14)
+        doc.setFont(undefined, "bold")
+        doc.text("PROFILE", 20, 55)
+
+        doc.setFontSize(10)
+        doc.setFont(undefined, "normal")
+        const profileText = `My academic background has provided me with a strong foundation in software development and problem-solving skills. I am passionate about enhancing my technical expertise to create efficient and innovative applications that meet user needs. I am eager to tackle complex challenges and contribute to projects that enhance functionality and improve user experience in dynamic environments.`
+        const splitProfile = doc.splitTextToSize(profileText, 170)
+        doc.text(splitProfile, 20, 65)
+
+        // Education Section
+        doc.setFontSize(14)
+        doc.setFont(undefined, "bold")
+        doc.text("EDUCATION AND CERTIFICATION", 20, 95)
+
+        doc.setFontSize(10)
+        doc.setFont(undefined, "normal")
+        doc.text("Walter Sisulu University | 2022 – 2024", 20, 105)
+        doc.text("Diploma in Information and Communication Technology in Application Development", 20, 115)
+
+        doc.text("Oracle | 2025", 20, 130)
+        doc.text("1Z0-808 – Java SE 8 Programmer", 20, 140)
+
+        doc.text("Certiport | 2025", 20, 155)
+        doc.text("Information Technology Specialist", 20, 165)
+
+        doc.text("IBM | 2025", 20, 180)
+        doc.text("Artificial Intelligence Fundamentals Professional Skills", 20, 190)
+
+        // Leadership Section
+        doc.setFontSize(14)
+        doc.setFont(undefined, "bold")
+        doc.text("LEADERSHIP AND EXTRACURRICULAR", 20, 210)
+
+        doc.setFontSize(10)
+        doc.setFont(undefined, "normal")
+        doc.text("Marketing Officer – WSU BCC Enactus | July 2023 – August 2024", 20, 220)
+        doc.text("• Worked collaboratively with executive members to organize events and initiatives", 20, 230)
+        doc.text("  that align with the society's objectives.", 20, 240)
+        doc.text("• Creating and executing advertising campaigns to promote the organization.", 20, 250)
+
+        // Programming Languages
+        doc.setFontSize(14)
+        doc.setFont(undefined, "bold")
+        doc.text("PROGRAMMING LANGUAGES", 20, 270)
+
+        doc.setFontSize(10)
+        doc.setFont(undefined, "normal")
+        doc.text("• Java    • Visual Basic    • JavaScript    • Python", 20, 280)
+
+        // Add new page for Experience
+        doc.addPage()
+
+        // Experience Section
+        doc.setFontSize(14)
+        doc.setFont(undefined, "bold")
+        doc.text("EXPERIENCE", 20, 20)
+
+        doc.setFontSize(10)
+        doc.setFont(undefined, "normal")
+        doc.text("Software Development Trainee – Java Program", 20, 30)
+        doc.text("Afrika Tikkun | May 2025 - Present", 20, 40)
+
+        doc.text("• Gained hands-on experience in Java programming (OOP, data structures,", 20, 55)
+        doc.text("  algorithms, exception handling).", 20, 65)
+        doc.text("• Developed and tested console and GUI-based applications using Java.", 20, 75)
+        doc.text("• Collaborated in team projects, using Git/GitHub for version control.", 20, 85)
+        doc.text("• Practiced debugging, testing, and documentation to ensure code quality.", 20, 95)
+
+        // Download the PDF
+        doc.save("Buyiswa_Asanda_Zozi_CV.pdf")
+      })
+      .catch((error) => {
+        console.error("Error loading jsPDF:", error)
+        // Fallback to static file if jsPDF fails to load
+        const link = document.createElement("a")
+        link.href = "/Buyiswa Asanda Zozi Dev.pdf"
+        link.download = "Buyiswa_Asanda_Zozi_CV.pdf"
+        link.click()
+      })
+  }
+
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
       {/* Animated Star Field Background */}
@@ -130,14 +228,13 @@ export default function SpaceProfile() {
             <span className="text-2xl font-bold text-white">Buyiswa Zozi</span>
           </div>
           <div className="flex gap-4">
-            <Button variant="default" size="sm" className="bg-primary hover:bg-primary/80 glow-effect">
-              <a
-                href="/Buyiswa Asanda Zozi Dev.pdf"
-                download="Buyiswa_Asanda_Zozi_CV.pdf"
-                className="flex items-center gap-2"
-              >
-                📄 Download CV
-              </a>
+            <Button
+              variant="default"
+              size="sm"
+              className="bg-primary hover:bg-primary/80 glow-effect"
+              onClick={generateAndDownloadCV}
+            >
+              <span className="flex items-center gap-2">📄 Download CV</span>
             </Button>
             <Button variant="ghost" size="sm" className="glass-effect hover:glow-effect">
               <a
