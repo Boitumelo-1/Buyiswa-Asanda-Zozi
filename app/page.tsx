@@ -20,18 +20,28 @@ export default function SpaceProfile() {
   ]
 
   const skills = [
+    "Java",
     "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Node.js",
+    "Visual Basic",
     "Python",
     "SQL",
     "Git",
-    "AWS",
-    "Docker",
-    "GraphQL",
     "MongoDB",
+  ]
+
+  const education = [
+    {
+      Qualification: "Diploma in ICT in Aplication Development",
+      institution: "Walter Sisulu University",
+      year: "2022 - 2024",
+      description: "Specialized in Software Development",
+    },
+    {
+      Qualification: "Matric",
+      institution: "Boipelo Secondary School",
+      year: "2016 - 2020",
+      description: "Mathematics and Physical Sciences",
+    },
   ]
 
   const projects = [
@@ -110,9 +120,14 @@ export default function SpaceProfile() {
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Rocket className="w-8 h-8 text-primary float-animation" />
-            <span className="text-2xl font-bold text-white">Boitumelo</span>
+            <span className="text-2xl font-bold text-white">Buyiswa Zozi</span>
           </div>
           <div className="flex gap-4">
+            <Button variant="default" size="sm" className="bg-primary hover:bg-primary/80 glow-effect">
+              <a href="/cv.pdf" download="https://zac-word-edit.officeapps.live.com/we/WordViewer/request.pdf?WOPIsrc=https%3A%2F%2Fwsuacza%2Dmy%2Esharepoint%2Ecom%2Fpersonal%2F222133422%5Fmywsu%5Fac%5Fza%2F%5Fvti%5Fbin%2Fwopi%2Eashx%2Ffiles%2F4584e8ad95b74b37ba96bb1754ea76a2&&&type=downloadpdfwithoutcomments&rndm=9c95c51a-5796-44ea-b624-3ea1007ae2ba&usid=799d87d7-6338-40f9-9271-e53798bfede3&build=20250904.7&waccluster=GZA1&&" className="flex items-center gap-2">
+                📄 Download CV
+              </a>
+            </Button>
             <Button variant="ghost" size="sm" className="glass-effect hover:glow-effect">
               <a
                 href="https://www.linkedin.com/in/buyiswa-zozi-087980273/"
@@ -246,6 +261,31 @@ export default function SpaceProfile() {
               </Button>
             </CardContent>
           </Card>
+        </div>
+
+        {/* Education Section */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-center mb-8 text-white">Education</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {education.map((edu, index) => (
+              <Card
+                key={edu.degree}
+                className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation"
+                style={{ animationDelay: `${index * 0.5}s` }}
+              >
+                <CardContent className="p-6">
+                  <div className="flex items-start justify-between mb-3">
+                    <h3 className="text-lg font-semibold text-balance">{edu.degree}</h3>
+                    <Badge variant="outline" className="text-xs">
+                      {edu.year}
+                    </Badge>
+                  </div>
+                  <p className="text-primary font-medium mb-2">{edu.institution}</p>
+                  <p className="text-muted-foreground text-balance">{edu.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
 
         {/* Projects Section */}
