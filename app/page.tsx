@@ -484,13 +484,29 @@ export default function SpaceProfile() {
           <p className="text-muted-foreground">Built with ❤️ and lots of ☕ • Powered by Code</p>
           <div className="flex justify-center gap-4 mt-4">
             <Button variant="ghost" size="sm" className="glass-effect hover:glow-effect">
-              <Github className="w-4 h-4" />
+              <a
+                href="https://github.com/boitumelo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <Github className="w-4 h-4" />
+              </a>
             </Button>
             <Button variant="ghost" size="sm" className="glass-effect hover:glow-effect">
-              <Linkedin className="w-4 h-4" />
+              <a
+                href="https://www.linkedin.com/in/buyiswa-zozi-087980273/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <Linkedin className="w-4 h-4" />
+              </a>
             </Button>
             <Button variant="ghost" size="sm" className="glass-effect hover:glow-effect">
-              <Mail className="w-4 h-4" />
+              <a href="mailto:zozibuyiswa@gmail.com" className="flex items-center gap-2">
+                <Mail className="w-4 h-4" />
+              </a>
             </Button>
           </div>
         </footer>
