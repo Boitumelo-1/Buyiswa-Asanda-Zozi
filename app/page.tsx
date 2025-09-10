@@ -36,6 +36,27 @@ export default function SpaceProfile() {
     },
   ]
 
+  const certifications = [
+    {
+      title: "Java SE 8 Programmer",
+      issuer: "Oracle",
+      year: "2025",
+      description: "1Z0-808 Certification",
+    },
+    {
+      title: "Information Technology Specialist",
+      issuer: "Certiport",
+      year: "2025",
+      description: "Professional Skills Certification",
+    },
+    {
+      title: "AI Fundamentals",
+      issuer: "IBM",
+      year: "2025",
+      description: "Artificial Intelligence Professional Skills",
+    },
+  ]
+
   const experience = [
     {
       title: "Software Development Trainee - Java Program",
@@ -372,6 +393,31 @@ export default function SpaceProfile() {
           </div>
         </div>
 
+        {/* Certifications Section */}
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold text-center mb-8 text-white">Certifications</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {certifications.map((cert, index) => (
+              <Card
+                key={cert.title}
+                className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation"
+                style={{ animationDelay: `${index * 0.5}s` }}
+              >
+                <CardContent className="p-6">
+                  <div className="flex items-start justify-between mb-3">
+                    <h3 className="text-lg font-semibold text-balance">{cert.title}</h3>
+                    <Badge variant="outline" className="text-xs">
+                      {cert.year}
+                    </Badge>
+                  </div>
+                  <p className="text-primary font-medium mb-2">{cert.issuer}</p>
+                  <p className="text-muted-foreground text-balance">{cert.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
         {/* Experience Section */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-center mb-8 text-white">Experience</h2>
@@ -506,7 +552,10 @@ export default function SpaceProfile() {
               </a>
             </Button>
             <Button variant="ghost" size="sm" className="glass-effect hover:glow-effect">
-              <a href="mailto:zozibuyiswa@gmail.com?subject=Let's Connect&body=Hi Buyiswa, I'd like to discuss a potential collaboration opportunity" className="flex items-center gap-2">
+              <a
+                href="mailto:zozibuyiswa@gmail.com?subject=Let's Connect&body=Hi Buyiswa, I'd like to discuss a potential collaboration opportunity"
+                className="flex items-center gap-2"
+              >
                 <Mail className="w-4 h-4" />
               </a>
             </Button>
