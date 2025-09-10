@@ -117,7 +117,7 @@ export default function SpaceProfile() {
           <div className="flex gap-4">
             <Button variant="default" size="sm" className="bg-primary hover:bg-primary/80 glow-effect">
               <a
-                href="/Buyiswa_Asanda_Zozi_CV.pdf"
+                href="/Buyiswa%20Asanda%20Zozi%20CV.pdf"
                 download="Buyiswa_Asanda_Zozi_CV.pdf"
                 className="flex items-center gap-2"
               >
