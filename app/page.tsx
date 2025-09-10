@@ -551,12 +551,13 @@ export default function SpaceProfile() {
                 <Linkedin className="w-4 h-4" />
               </a>
             </Button>
-            <Button variant="ghost" size="sm" className="glass-effect hover:glow-effect">
+            <Button variant="ghost" size="sm" className="glass-effect hover:glow-effect" title="Send me an email">
               <a
-                href="mailto:zozibuyiswa@gmail.com"
+                href="mailto:zozibuyiswa@gmail.com?subject=Hello Buyiswa&body=Hi Buyiswa,%0D%0A%0D%0AI'd like to get in touch with you.%0D%0A%0D%0ABest regards"
                 className="flex items-center gap-2"
               >
                 <Mail className="w-4 h-4" />
+                <span className="sr-only">Email</span>
               </a>
             </Button>
           </div>
