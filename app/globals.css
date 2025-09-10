@@ -11,25 +11,25 @@
   --card-foreground: oklch(0.98 0 0); /* White text on cards */
   --popover: oklch(0.28 0.02 240); /* Popover background */
   --popover-foreground: oklch(0.98 0 0); /* White text on popovers */
-  /* Changed from amber to light glassy purple */
-  --primary: oklch(0.75 0.12 280); /* Light glassy purple */
+  /* Reverted back to original amber/orange color */
+  --primary: oklch(0.7 0.15 60); /* Warm amber/orange */
   --primary-foreground: oklch(0.98 0 0); /* White text on primary */
   --secondary: oklch(0.18 0.02 240); /* Secondary background */
   --secondary-foreground: oklch(0.98 0 0); /* White text on secondary */
   --muted: oklch(0.28 0.02 240); /* Muted background */
   --muted-foreground: oklch(0.7 0 0); /* Muted text */
-  /* Changed accent to match primary purple */
-  --accent: oklch(0.75 0.12 280); /* Light glassy purple accent */
+  /* Reverted accent to amber/orange */
+  --accent: oklch(0.7 0.15 60); /* Warm amber/orange accent */
   --accent-foreground: oklch(0.12 0.02 240); /* Dark text on accent */
   --destructive: oklch(0.55 0.22 25); /* Red for destructive actions */
   --destructive-foreground: oklch(0.98 0 0); /* White text on destructive */
   --border: oklch(0.28 0.02 240); /* Border color */
   --input: oklch(0.18 0.02 240); /* Input background */
-  /* Changed ring color to purple */
-  --ring: oklch(0.75 0.12 280); /* Purple focus ring */
+  /* Reverted ring color to amber/orange */
+  --ring: oklch(0.7 0.15 60); /* Amber/orange focus ring */
   --chart-1: oklch(0.6 0.2 270); /* Purple chart color */
-  /* Changed chart-2 to purple */
-  --chart-2: oklch(0.75 0.12 280); /* Light purple chart color */
+  /* Reverted chart-2 to amber/orange */
+  --chart-2: oklch(0.7 0.15 60); /* Amber/orange chart color */
   --chart-3: oklch(0.55 0.22 25); /* Red chart color */
   --chart-4: oklch(0.7 0.15 200); /* Cyan chart color */
   --chart-5: oklch(0.6 0.2 140); /* Green chart color */
@@ -37,13 +37,13 @@
   --sidebar: oklch(0.18 0.02 240); /* Sidebar background */
   --sidebar-foreground: oklch(0.98 0 0); /* Sidebar text */
   --sidebar-primary: oklch(0.12 0.02 240); /* Primary sidebar */
-  /* Changed sidebar primary foreground to purple */
-  --sidebar-primary-foreground: oklch(0.75 0.12 280); /* Purple sidebar text */
+  /* Reverted sidebar primary foreground to amber/orange */
+  --sidebar-primary-foreground: oklch(0.7 0.15 60); /* Amber/orange sidebar text */
   --sidebar-accent: oklch(0.6 0.2 270); /* Sidebar accent */
   --sidebar-accent-foreground: oklch(0.98 0 0); /* Sidebar accent text */
   --sidebar-border: oklch(0.28 0.02 240); /* Sidebar border */
-  /* Changed sidebar ring to purple */
-  --sidebar-ring: oklch(0.75 0.12 280); /* Purple sidebar focus ring */
+  /* Reverted sidebar ring to amber/orange */
+  --sidebar-ring: oklch(0.7 0.15 60); /* Amber/orange sidebar focus ring */
 }
 
 .dark {
@@ -54,25 +54,25 @@
   --card-foreground: oklch(0.98 0 0);
   --popover: oklch(0.12 0.02 240);
   --popover-foreground: oklch(0.98 0 0);
-  /* Changed dark mode primary to brighter purple */
-  --primary: oklch(0.8 0.15 280); /* Brighter light purple in dark mode */
+  /* Reverted dark mode primary to brighter amber/orange */
+  --primary: oklch(0.75 0.18 60); /* Brighter amber/orange in dark mode */
   --primary-foreground: oklch(0.08 0.02 240);
   --secondary: oklch(0.15 0.02 240);
   --secondary-foreground: oklch(0.98 0 0);
   --muted: oklch(0.15 0.02 240);
   --muted-foreground: oklch(0.65 0 0);
-  /* Changed dark mode accent to purple */
-  --accent: oklch(0.8 0.15 280);
+  /* Reverted dark mode accent to amber/orange */
+  --accent: oklch(0.75 0.18 60);
   --accent-foreground: oklch(0.08 0.02 240);
   --destructive: oklch(0.5 0.25 25);
   --destructive-foreground: oklch(0.98 0 0);
   --border: oklch(0.15 0.02 240);
   --input: oklch(0.12 0.02 240);
-  /* Changed dark mode ring to purple */
-  --ring: oklch(0.8 0.15 280);
+  /* Reverted dark mode ring to amber/orange */
+  --ring: oklch(0.75 0.18 60);
   --chart-1: oklch(0.65 0.22 270);
-  /* Changed dark mode chart-2 to purple */
-  --chart-2: oklch(0.8 0.15 280);
+  /* Reverted dark mode chart-2 to amber/orange */
+  --chart-2: oklch(0.75 0.18 60);
   --chart-3: oklch(0.5 0.25 25);
   --chart-4: oklch(0.75 0.18 200);
   --chart-5: oklch(0.65 0.22 140);
@@ -83,8 +83,8 @@
   --sidebar-accent: oklch(0.15 0.02 240);
   --sidebar-accent-foreground: oklch(0.98 0 0);
   --sidebar-border: oklch(0.15 0.02 240);
-  /* Changed dark mode sidebar ring to purple */
-  --sidebar-ring: oklch(0.8 0.15 280);
+  /* Reverted dark mode sidebar ring to amber/orange */
+  --sidebar-ring: oklch(0.75 0.18 60);
 }
 
 @theme inline {
@@ -175,14 +175,14 @@
   }
 }
 
-/* Updated glow effect to use purple instead of orange */
+/* Reverted glow effect to use amber/orange instead of purple */
 @keyframes glow-pulse {
   0%,
   100% {
-    box-shadow: 0 0 20px rgba(186, 164, 255, 0.3);
+    box-shadow: 0 0 20px rgba(255, 191, 0, 0.3);
   }
   50% {
-    box-shadow: 0 0 40px rgba(186, 164, 255, 0.6), 0 0 60px rgba(186, 164, 255, 0.3);
+    box-shadow: 0 0 40px rgba(255, 191, 0, 0.6), 0 0 60px rgba(255, 191, 0, 0.3);
   }
 }
 
@@ -239,9 +239,9 @@
 }
 
 /* Added better contrast styles for badges */
-/* Updated badge primary to use purple instead of orange */
+/* Reverted badge primary to use amber/orange instead of purple */
 .badge-primary {
-  background: rgba(186, 164, 255, 0.3);
+  background: rgba(255, 191, 0, 0.3);
   color: oklch(0.98 0 0);
-  border: 1px solid rgba(186, 164, 255, 0.5);
+  border: 1px solid rgba(255, 191, 0, 0.5);
 }
