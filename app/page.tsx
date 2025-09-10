@@ -553,7 +553,7 @@ export default function SpaceProfile() {
             </Button>
             <Button variant="ghost" size="sm" className="glass-effect hover:glow-effect">
               <a
-                href="mailto:zozibuyiswa@gmail.com?subject=Let's Connect&body=Hi Buyiswa, I'd like to discuss a potential collaboration opportunity"
+                href="mailto:zozibuyiswa@gmail.com"
                 className="flex items-center gap-2"
               >
                 <Mail className="w-4 h-4" />
