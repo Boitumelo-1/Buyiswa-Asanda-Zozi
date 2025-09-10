@@ -249,7 +249,7 @@ export default function SpaceProfile() {
             </Button>
             <Button variant="ghost" size="sm" className="glass-effect hover:glow-effect">
               <a
-                href="https://github.com/boitumelo"
+                href="https://github.com/Boitumelo-1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -485,7 +485,7 @@ export default function SpaceProfile() {
           <div className="flex justify-center gap-4 mt-4">
             <Button variant="ghost" size="sm" className="glass-effect hover:glow-effect">
               <a
-                href="https://github.com/boitumelo"
+                href="https://github.com/Boitumelo-1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
