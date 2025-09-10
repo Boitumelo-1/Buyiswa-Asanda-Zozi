@@ -229,26 +229,6 @@ export default function SpaceProfile() {
             </CardContent>
           </Card>
 
-          
-
-          <Card
-            className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation md:col-span-2 lg:col-span-1"
-            style={{ animationDelay: "2s" }}
-          >
-            <CardContent className="p-6">
-              <div className="flex items-start justify-between mb-3">
-                <h3 className="text-lg font-semibold text-balance">Contact</h3>
-                <Badge variant="outline" className="text-xs">
-                  Get In Touch
-                </Badge>
-              </div>
-              <Button className="w-full bg-primary hover:bg-primary/80 glow-effect">
-                <Mail className="w-4 h-4 mr-2" />
-                Get In Touch
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
 
         {/* Education Section */}
         <div className="mb-12">
@@ -335,6 +315,25 @@ export default function SpaceProfile() {
             </div>
           </CardContent>
         </Card>
+
+        <Card
+            className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation md:col-span-2 lg:col-span-1"
+            style={{ animationDelay: "2s" }}
+          >
+            <CardContent className="p-6">
+              <div className="flex items-start justify-between mb-3">
+                <h3 className="text-lg font-semibold text-balance">Contact</h3>
+                <Badge variant="outline" className="text-xs">
+                  Get In Touch
+                </Badge>
+              </div>
+              <Button className="w-full bg-primary hover:bg-primary/80 glow-effect">
+                <Mail className="w-4 h-4 mr-2" />
+                Get In Touch
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
 
         {/* Footer */}
         <footer className="text-center py-8">
