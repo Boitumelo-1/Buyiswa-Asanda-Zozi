@@ -471,9 +471,11 @@ export default function SpaceProfile() {
                 <h3 className="text-lg font-semibold">Contact</h3>
               </div>
               <p className="text-muted-foreground mb-4">Ready to collaborate? Let's connect!</p>
-              <Button className="w-full bg-primary hover:bg-primary/80 glow-effect">
-                <Mail className="w-4 h-4 mr-2" />
-                Get In Touch
+              <Button className="w-full bg-primary hover:bg-primary/80 glow-effect" asChild>
+                <a href="mailto:zozibuyiswa@gmail.com">
+                  <Mail className="w-4 h-4 mr-2" />
+                  Get In Touch
+                </a>
               </Button>
             </CardContent>
           </Card>
