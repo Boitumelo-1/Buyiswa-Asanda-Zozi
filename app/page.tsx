@@ -180,42 +180,47 @@ export default function SpaceProfile() {
           </div>
         </div>
 
-        <Card
-            className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation"
+        {/* About Me Section */}
+        <div className="mb-12">
+          <Card
+            className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation max-w-4xl mx-auto"
             style={{ animationDelay: "1s" }}
           >
-            <CardContent className="p-6">
-              <div className="flex items-center gap-2 mb-4">
+            <CardContent className="p-8 text-center">
+              <div className="flex items-center justify-center gap-2 mb-6">
                 <Coffee className="w-6 h-6 text-primary" />
-                <h3 className="text-xl font-semibold">About Me</h3>
+                <h3 className="text-2xl font-semibold">About Me</h3>
               </div>
-              <p className="text-muted-foreground text-balance">
-                I'm a passionate and curious software development trainee with hands-on experience in Java programming,
-                problem-solving, and building practical projects. I enjoy turning real-world challenges into code
-                solutions, exploring how technology works, and continuously learning new skills.
-              </p>
-              <p className="text-muted-foreground text-balance mt-3">
-                When I started coding, I had no idea how a computer works—but over time, I've grown to love
-                understanding the logic behind it all. Beyond coding, I have a creative side and experience in modeling,
-                which has helped me develop confidence, presentation skills, and a keen eye for detail.
-              </p>
-              <p className="text-muted-foreground text-balance mt-3">
-                I thrive at the intersection of logic and creativity, whether it's debugging a tricky program, building
-                an application, or expressing myself through modeling. I'm always excited to learn, grow, and contribute
-                to innovative projects that make a real impact.
-              </p>
+              <div className="space-y-4 text-muted-foreground">
+                <p className="text-balance">
+                  I'm a passionate and curious software development trainee with hands-on experience in Java
+                  programming, problem-solving, and building practical projects. I enjoy turning real-world challenges
+                  into code solutions, exploring how technology works, and continuously learning new skills.
+                </p>
+                <p className="text-balance">
+                  When I started coding, I had no idea how a computer works—but over time, I've grown to love
+                  understanding the logic behind it all. Beyond coding, I have a creative side and experience in
+                  modeling, which has helped me develop confidence, presentation skills, and a keen eye for detail.
+                </p>
+                <p className="text-balance">
+                  I thrive at the intersection of logic and creativity, whether it's debugging a tricky program,
+                  building an application, or expressing myself through modeling. I'm always excited to learn, grow, and
+                  contribute to innovative projects that make a real impact.
+                </p>
+              </div>
             </CardContent>
           </Card>
+        </div>
 
-        {/* Skills Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          <Card className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation">
-            <CardContent className="p-6">
-              <div className="flex items-center gap-2 mb-4">
+        {/* Skills Section */}
+        <div className="mb-12">
+          <Card className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation max-w-2xl mx-auto">
+            <CardContent className="p-6 text-center">
+              <div className="flex items-center justify-center gap-2 mb-4">
                 <Zap className="w-6 h-6 text-primary" />
                 <h3 className="text-xl font-semibold">Skills</h3>
               </div>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 justify-center">
                 {skills.map((skill) => (
                   <Badge
                     key={skill}
@@ -228,7 +233,7 @@ export default function SpaceProfile() {
               </div>
             </CardContent>
           </Card>
-
+        </div>
 
         {/* Education Section */}
         <div className="mb-12">
@@ -236,13 +241,13 @@ export default function SpaceProfile() {
           <div className="grid md:grid-cols-2 gap-6">
             {education.map((edu, index) => (
               <Card
-                key={edu.degree}
+                key={edu.Qualification}
                 className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation"
                 style={{ animationDelay: `${index * 0.5}s` }}
               >
                 <CardContent className="p-6">
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-lg font-semibold text-balance">{edu.degree}</h3>
+                    <h3 className="text-lg font-semibold text-balance">{edu.Qualification}</h3>
                     <Badge variant="outline" className="text-xs">
                       {edu.year}
                     </Badge>
@@ -316,17 +321,15 @@ export default function SpaceProfile() {
           </CardContent>
         </Card>
 
-        <Card
-            className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation md:col-span-2 lg:col-span-1"
-            style={{ animationDelay: "2s" }}
-          >
-            <CardContent className="p-6">
-              <div className="flex items-start justify-between mb-3">
-                <h3 className="text-lg font-semibold text-balance">Contact</h3>
-                <Badge variant="outline" className="text-xs">
-                  Get In Touch
-                </Badge>
+        {/* Contact Section */}
+        <div className="mb-12">
+          <Card className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation max-w-md mx-auto">
+            <CardContent className="p-6 text-center">
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <Mail className="w-6 h-6 text-primary" />
+                <h3 className="text-lg font-semibold">Contact</h3>
               </div>
+              <p className="text-muted-foreground mb-4">Ready to collaborate? Let's connect!</p>
               <Button className="w-full bg-primary hover:bg-primary/80 glow-effect">
                 <Mail className="w-4 h-4 mr-2" />
                 Get In Touch
