@@ -184,28 +184,6 @@ export default function SpaceProfile() {
           </div>
         </div>
 
-        {/* Fun Facts Slideshow */}
-        <Card className="mb-12 glass-effect border-primary/20 hover:glow-effect transition-all duration-300">
-          <CardContent className="p-8 text-center">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <Star className="w-5 h-5 text-primary twinkle-animation" />
-              <h3 className="text-lg font-semibold">Fun Fact #{currentFactIndex + 1}</h3>
-              <Star className="w-5 h-5 text-primary twinkle-animation" />
-            </div>
-            <p className="text-lg text-balance">{funFacts[currentFactIndex]}</p>
-            <div className="flex justify-center gap-2 mt-4">
-              {funFacts.map((_, index) => (
-                <div
-                  key={index}
-                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                    index === currentFactIndex ? "bg-primary" : "bg-muted"
-                  }`}
-                />
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-
         {/* Skills Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           <Card className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation">
@@ -326,6 +304,28 @@ export default function SpaceProfile() {
             ))}
           </div>
         </div>
+
+        {/* Fun Facts Slideshow */}
+        <Card className="mb-12 glass-effect border-primary/20 hover:glow-effect transition-all duration-300">
+          <CardContent className="p-8 text-center">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <Star className="w-5 h-5 text-primary twinkle-animation" />
+              <h3 className="text-lg font-semibold">Fun Fact #{currentFactIndex + 1}</h3>
+              <Star className="w-5 h-5 text-primary twinkle-animation" />
+            </div>
+            <p className="text-lg text-balance">{funFacts[currentFactIndex]}</p>
+            <div className="flex justify-center gap-2 mt-4">
+              {funFacts.map((_, index) => (
+                <div
+                  key={index}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    index === currentFactIndex ? "bg-primary" : "bg-muted"
+                  }`}
+                />
+              ))}
+            </div>
+          </CardContent>
+        </Card>
 
         {/* Footer */}
         <footer className="text-center py-8">
