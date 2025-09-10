@@ -180,29 +180,7 @@ export default function SpaceProfile() {
           </div>
         </div>
 
-        {/* Skills Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          <Card className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation">
-            <CardContent className="p-6">
-              <div className="flex items-center gap-2 mb-4">
-                <Zap className="w-6 h-6 text-primary" />
-                <h3 className="text-xl font-semibold">Skills</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {skills.map((skill) => (
-                  <Badge
-                    key={skill}
-                    variant="secondary"
-                    className="bg-primary/30 text-white border-primary/50 hover:bg-primary/40"
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card
+        <Card
             className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation"
             style={{ animationDelay: "1s" }}
           >
@@ -228,6 +206,30 @@ export default function SpaceProfile() {
               </p>
             </CardContent>
           </Card>
+
+        {/* Skills Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <Card className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation">
+            <CardContent className="p-6">
+              <div className="flex items-center gap-2 mb-4">
+                <Zap className="w-6 h-6 text-primary" />
+                <h3 className="text-xl font-semibold">Skills</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {skills.map((skill) => (
+                  <Badge
+                    key={skill}
+                    variant="secondary"
+                    className="bg-primary/30 text-white border-primary/50 hover:bg-primary/40"
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          
 
           <Card
             className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation md:col-span-2 lg:col-span-1"
