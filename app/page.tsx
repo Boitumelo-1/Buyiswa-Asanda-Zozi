@@ -19,15 +19,7 @@ export default function SpaceProfile() {
     "I can type 85 WPM but still use two fingers sometimes 🤷‍♂️",
   ]
 
-  const skills = [
-    "Java",
-    "JavaScript",
-    "Visual Basic",
-    "Python",
-    "SQL",
-    "Git",
-    "MongoDB",
-  ]
+  const skills = ["Java", "JavaScript", "Visual Basic", "Python", "SQL", "Git", "MongoDB"]
 
   const education = [
     {
@@ -124,7 +116,11 @@ export default function SpaceProfile() {
           </div>
           <div className="flex gap-4">
             <Button variant="default" size="sm" className="bg-primary hover:bg-primary/80 glow-effect">
-              <a href="/cv.pdf" download="https://zac-word-edit.officeapps.live.com/we/WordViewer/request.pdf?WOPIsrc=https%3A%2F%2Fwsuacza%2Dmy%2Esharepoint%2Ecom%2Fpersonal%2F222133422%5Fmywsu%5Fac%5Fza%2F%5Fvti%5Fbin%2Fwopi%2Eashx%2Ffiles%2F4584e8ad95b74b37ba96bb1754ea76a2&&&type=downloadpdfwithoutcomments&rndm=9c95c51a-5796-44ea-b624-3ea1007ae2ba&usid=799d87d7-6338-40f9-9271-e53798bfede3&build=20250904.7&waccluster=GZA1&&" className="flex items-center gap-2">
+              <a
+                href="/Buyiswa Asanda Zozi Dev.pdf"
+                download="Buyiswa_Asanda_Zozi_CV.pdf"
+                className="flex items-center gap-2"
+              >
                 📄 Download CV
               </a>
             </Button>
