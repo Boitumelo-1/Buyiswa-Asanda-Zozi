@@ -472,7 +472,7 @@ export default function SpaceProfile() {
               </div>
               <p className="text-muted-foreground mb-4">Ready to collaborate? Let's connect!</p>
               <Button className="w-full bg-primary hover:bg-primary/80 glow-effect" asChild>
-                <a href="mailto:zozibuyiswa@gmail.com?subject=Let's Connect&body=Hi Peshla, I'd like to discuss a potential collaboration opportunity">
+                <a href="mailto:zozibuyiswa@gmail.com?subject=Let's Connect&body=Hi Buyiswa, I'd like to discuss a potential collaboration opportunity">
                   <Mail className="w-4 h-4 mr-2" />
                   Get In Touch
                 </a>
@@ -506,7 +506,7 @@ export default function SpaceProfile() {
               </a>
             </Button>
             <Button variant="ghost" size="sm" className="glass-effect hover:glow-effect">
-              <a href="mailto:zozibuyiswa@gmail.com?subject=Let's Connect&body=Hi Peshla, I'd like to discuss a potential collaboration opportunity" className="flex items-center gap-2">
+              <a href="mailto:zozibuyiswa@gmail.com?subject=Let's Connect&body=Hi Buyiswa, I'd like to discuss a potential collaboration opportunity" className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
               </a>
             </Button>
