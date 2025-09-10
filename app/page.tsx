@@ -11,12 +11,12 @@ export default function SpaceProfile() {
   const [stars, setStars] = useState<Array<{ id: number; x: number; y: number; size: number; delay: number }>>([])
 
   const funFacts = [
-    "I can solve a Rubik's cube in under 2 minutes! 🧩",
+    "I started coding clueless about computers, and discovering how they work has been an exciting journey.🧩",
     "I've watched every Star Wars movie at least 5 times ⭐",
     "I code better with lo-fi music playing in the background 🎵",
-    "I once debugged code for 6 hours straight and it was a missing semicolon 😅",
-    "I collect vintage programming books from the 80s and 90s 📚",
-    "I can type 85 WPM but still use two fingers sometimes 🤷‍♂️",
+    "I once debugged code for hours only to find out it was a missing semicolon😅",
+    "I see both coding and modeling as forms of creativity—one builds logic, the other builds expression.🎨",
+    "📸When I’m not coding, I like capturing moments through photography.",
   ]
 
   const skills = ["Java", "JavaScript", "Visual Basic", "Python", "SQL", "Git", "MongoDB"]
@@ -212,8 +212,19 @@ export default function SpaceProfile() {
                 <h3 className="text-xl font-semibold">About Me</h3>
               </div>
               <p className="text-muted-foreground text-balance">
-                Passionate developer who loves creating stellar user experiences. When I'm not coding, you'll find me
-                stargazing or reading about the latest in tech exploration.
+                I'm a passionate and curious software development trainee with hands-on experience in Java programming,
+                problem-solving, and building practical projects. I enjoy turning real-world challenges into code
+                solutions, exploring how technology works, and continuously learning new skills.
+              </p>
+              <p className="text-muted-foreground text-balance mt-3">
+                When I started coding, I had no idea how a computer works—but over time, I've grown to love
+                understanding the logic behind it all. Beyond coding, I have a creative side and experience in modeling,
+                which has helped me develop confidence, presentation skills, and a keen eye for detail.
+              </p>
+              <p className="text-muted-foreground text-balance mt-3">
+                I thrive at the intersection of logic and creativity, whether it's debugging a tricky program, building
+                an application, or expressing myself through modeling. I'm always excited to learn, grow, and contribute
+                to innovative projects that make a real impact.
               </p>
             </CardContent>
           </Card>
