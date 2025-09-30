@@ -446,11 +446,11 @@ export default function SpaceProfile() {
         {/* Projects Section */}
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-center mb-8 text-white">Featured Projects</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex flex-wrap gap-6 justify-center max-w-4xl mx-auto">
             {projects.map((project, index) => (
               <Card
                 key={project.title}
-                className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation"
+                className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation w-full md:w-[calc(50%-12px)]"
                 style={{ animationDelay: `${index * 0.5}s` }}
               >
                 <CardContent className="p-6">
