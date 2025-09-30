@@ -73,21 +73,17 @@ export default function SpaceProfile() {
 
   const projects = [
     {
-      title: "Cosmic Task Manager",
-      description: "A space-themed productivity app with stellar animations",
-      tech: ["React", "TypeScript", "Framer Motion"],
+      title: "Music Player Application",
+      description:
+        "A fully functional music player built with Java featuring playlist management, audio controls, and a modern GUI interface",
+      tech: ["Java", "Swing", "JavaFX"],
       status: "Live",
     },
     {
-      title: "Neural Network Visualizer",
-      description: "Interactive tool for understanding AI architectures",
-      tech: ["Python", "TensorFlow", "D3.js"],
-      status: "In Progress",
-    },
-    {
-      title: "Quantum Code Editor",
-      description: "Next-gen code editor with AI-powered suggestions",
-      tech: ["Electron", "Monaco", "OpenAI API"],
+      title: "AI-Powered Study Assistant",
+      description:
+        "An intelligent web application that helps students organize notes, generate quizzes, and get AI-driven study recommendations",
+      tech: ["JavaScript", "Python", "MongoDB", "AI API"],
       status: "Planning",
     },
   ]
@@ -549,6 +545,7 @@ export default function SpaceProfile() {
                 className="flex items-center gap-2"
               >
                 <Linkedin className="w-4 h-4" />
+                LinkedIn
               </a>
             </Button>
             <Button variant="ghost" size="sm" className="glass-effect hover:glow-effect" title="Send me an email">
