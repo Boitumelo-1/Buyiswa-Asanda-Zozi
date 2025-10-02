@@ -525,7 +525,7 @@ export default function SpaceProfile() {
 
         {/* Footer */}
         <footer className="text-center py-8">
-          <p className="text-muted-foreground">Built with ❤️ and lots of ☕ • Powered by Code</p>
+          <p className="text-muted-foreground">Built with ❤️ and lots of ☕</p>
           <div className="flex justify-center gap-4 mt-4">
             <Button variant="ghost" size="sm" className="glass-effect hover:glow-effect">
               <a
