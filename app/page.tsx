@@ -73,17 +73,17 @@ export default function SpaceProfile() {
 
   const projects = [
     {
-      title: "Music Player Application",
+      title: "AI-Powered Habit Tracker",
       description:
-        "A fully functional music player built with Java featuring playlist management, audio controls, and a modern GUI interface",
-      tech: ["Java", "Swing", "JavaFX"],
+        "An intelligent habit tracking application that helps users accomplish their goals and become better versions of themselves through AI-driven insights and personalized recommendations",
+      tech: ["JavaScript", "HTML", "CSS", "AI API"],
       status: "Live",
     },
     {
-      title: "AI-Powered Study Assistant",
+      title: "E-Commerce Platform",
       description:
-        "An intelligent web application that helps students organize notes, generate quizzes, and get AI-driven study recommendations",
-      tech: ["JavaScript", "Python", "MongoDB", "AI API"],
+        "A full-featured online shopping platform with product catalog, shopping cart, user authentication, and secure payment integration for seamless customer experience",
+      tech: ["JavaScript", "Python", "MongoDB", "Stripe API"],
       status: "Planning",
     },
   ]
@@ -508,7 +508,7 @@ export default function SpaceProfile() {
         <div className="mb-12">
           <Card className="glass-effect border-primary/20 hover:glow-effect transition-all duration-300 float-animation max-w-md mx-auto">
             <CardContent className="p-6 text-center">
-              <div className="flex items-center justify-center gap-2 mb-4">
+              <div className="flex items-center justify-center gap-2 mb-6">
                 <Mail className="w-6 h-6 text-primary" />
                 <h3 className="text-lg font-semibold">Contact</h3>
               </div>
